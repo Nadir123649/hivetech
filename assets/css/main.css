@@ -912,6 +912,261 @@ padding-top: 20px;
 }
 
 
+/* company section index */
+
+
+/* header no styling because of same in home page */
+
+/* how-it-works-section */
+
+
+.how-works-content{
+  margin: 100px 210px;
+}
+
+.how-works-heading{
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 76px;
+  text-align: center;
+  color: #212121;
+}
+.how-works-desc{
+  font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+text-align: center;
+letter-spacing: 0.02em;
+color: #757575;
+padding-top: 20px;
+}
+.card-heading {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 58px;
+  color: #212121;
+}
+.card-img{
+  width: 270px;
+  margin-left: auto;
+  margin-right: auto; 
+  display: block;
+}
+.card-three-img{
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.card-img-top{
+  width: 200px;
+  height: 200px;
+}
+
+
+:root {
+  --card-line-height: 1.2em;
+  --card-padding: 1em;
+  --card-radius: 0.5em;
+  --radio-border-width: 2px;
+  --radio-size: 1.5em;
+}
+
+
+
+.card {
+  position: relative;
+  max-width: 680px;
+  border: 1px solid #E0E0E0;
+  border-radius: 30px;  
+}
+/* .card:hover{
+  background: #FFF8E6;
+  border: 3px solid #FEBD09;
+  border-radius: 30px;
+} */
+
+.radio {
+  font-size: inherit;
+  background: #FEBD09;
+  border: 1px solid #FEBD09;
+  margin: 0;
+  position: absolute;
+ 
+}
+
+@supports(-webkit-appearance: none) or (-moz-appearance: none) { 
+  .radio {
+
+    background: #FEBD09 !important;
+    border-color:  #FEBD09 !important;
+    border-radius: 50%;
+    cursor: pointer;
+    height: var(--radio-size);
+    outline: none;
+    position: absolute;
+    right: -100px;
+    top: 30px;
+  }
+    /* .radio::after {
+      border-top: 0;
+      border-left: 0;
+      content: '';
+      display: block;
+      height: 0.75rem;
+      left: 25%;
+      position: absolute;
+      top: 50%;
+    } */
+
+    .radio:checked ~ .radio {
+      background: #FEBD09 !important;;
+      border: 2px solid #FEBD09 !important;;
+    }
+  }
+  
+ 
+   
+.plan-details {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  padding-top: 130px ;
+  gap: 102px;
+}
+
+
+.radio:checked ~ .plan-details {
+  background: #FFF8E6;
+  border: 3px solid #FEBD09;
+  border-radius: 30px;
+}
+
+
+.dot{
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: transparent;
+  right: 30px;
+  top: 30px;
+  display: inline-block;
+}
+.dot::before {
+  content: "";
+  position: absolute;
+  inset: -3px;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #E0E0E0;;
+  border-radius: 50%;
+}
+.radio:checked ~ .dot {
+  background: #FEBD09;
+
+}
+.radio:checked ~ .dot::before {
+  border: 2px solid #FEBD09;
+}
+
+
+/* .card:hover .radio:disabled ~ .plan-details {
+  border-color: var(--color-gray);
+  box-shadow: none;
+}
+
+.card:hover .radio:disabled {
+    border-color: var(--color-gray);
+  } */
+.para-text{
+  margin: 100px 53px 0px 0px;
+}
+
+.para-desc{
+  font-weight: 500;
+font-size: 20px;
+line-height: 34px;
+letter-spacing: 0.02em;
+color: #212121;
+}
+.column-section{
+  padding: 20px 0px 100px 0px;
+}
+.col {
+  margin-top: 120px;
+}
+
+.company-row{
+  padding: 100px 0px 0px 0px;
+}
+
+.main-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 50px;
+}
+
+
+/* .img-div {
+  width: 180px;
+  height: 180px;
+} */
+/* .card-img-top{
+  width: 180.24px;
+  height: 180px;
+} */
+.card-small-heading{
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  color: #FEBD09;
+}
+.card-main-heading{
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 44px;
+  color: #212121;
+  padding-top: 5px;
+}
+.card-desc{
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #616161;
+  padding-top: 25px;
+}
+/* vertical styling of card */
+
+.column-section.vertical .row{
+  flex-direction: column;
+}
+.column-section.vertical .main-div{
+  flex-direction: row;
+}
+.column-section.vertical .main-div {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+section.vertical #main-div{
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+  .text-div{
+  max-width: 350px;
+}
+.column-section.vertical .main-div .card-img-top{
+  width: auto;
+  height: auto;
+}
+
 
 
 
